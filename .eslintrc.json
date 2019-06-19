@@ -19,8 +19,9 @@
         "react"
     ],
     "rules": {
+        "global-require": "off",
         "no-use-before-define": "off",
         "react/jsx-filename-extension": "off",
-        "react/prop-types": "off",
+        "react/prop-types": "off"
     }
 }
