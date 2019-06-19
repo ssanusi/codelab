@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   build:
+    environment:
+      CC_TEST_REPORTER_ID: d04a4d8e5d9689f5b2795ca59f08028670ffd06ff7005e1bd9b75fb5581581d8
     docker:
       - image: circleci/node:12.4.0
     steps:
@@ -11,5 +13,14 @@ jobs:
           name: Setup Dependencies
           command: yarn install
       - run:
-          name: test
-          command: yarn test -- -u
+          name: Setup Code Climate test-reporter
+          command: |
+            # download test reporter as a static binary
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          name: test coverage
+          command: |
+            ./cc-test-reporter before-build
+            yarn test -- -u
+            ./cc-test-reporter after-build --exit-code $?
