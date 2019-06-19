@@ -5,9 +5,6 @@ import App from '../App/App';
 it('App renders without crashing', () => {
 const rendered = renderer.create(<App />).toJSON();
 expect(rendered).toBeTruthy();
+expect(rendered).toMatchSnapshot();
 });
 
-it('App test against snapshot', () => {
-const tree = renderer.create(<App />).toJSON();
-expect(tree).toMatchSnapshot();
-});
