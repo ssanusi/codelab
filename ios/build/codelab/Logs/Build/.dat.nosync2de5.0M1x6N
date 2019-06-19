@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>B62BF852-C7C0-4A7C-A777-1C89BD91E661</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B62BF852-C7C0-4A7C-A777-1C89BD91E661.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>codelab project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>codelab</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project codelab with scheme codelab and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>582546616.27084899</real>
+			<key>timeStoppedRecording</key>
+			<real>582546617.65039206</real>
+			<key>title</key>
+			<string>Building project codelab with scheme codelab and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>B62BF852-C7C0-4A7C-A777-1C89BD91E661</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
