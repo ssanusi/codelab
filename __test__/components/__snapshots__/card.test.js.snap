@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 6.33,
+      "flexDirection": "row",
+      "height": 83.65,
+      "justifyContent": "space-evenly",
+      "marginHorizontal": 18,
+      "marginTop": 15,
+      "width": 331.41,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "borderRadius": 25,
+          "height": 60,
+          "width": 60,
+        }
+      }
+    />
+    <View>
+      <Text>
+        Sulaiman Sanusi
+      </Text>
+      <View>
+        <Text>
+          <Image
+            source={1}
+            style={
+              Object {
+                "height": 12,
+                "width": 12,
+              }
+            }
+          />
+           
+          ssanusi
+        </Text>
+      </View>
+    </View>
+    <View>
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </View>
+    <View />
+  </View>
+</View>
+`;
