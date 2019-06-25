@@ -24,7 +24,10 @@
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+<<<<<<< HEAD
     "react-native-dotenv": "^0.2.0",
+=======
+>>>>>>> implement Home Page
     "react-native-web": "^0.11.4",
     "react-navigation": "^3.11.0"
   },
@@ -45,7 +48,10 @@
     "eslint-plugin-react-native": "^3.7.0",
     "jest": "^24.8.0",
     "jest-expo": "^33.0.2",
+<<<<<<< HEAD
     "metro-react-native-babel-preset": "^0.54.1",
+=======
+>>>>>>> implement Home Page
     "react-test-renderer": "^16.8.6",
     "rn-nodeify": "^10.0.1",
     "waait": "^1.0.5"
