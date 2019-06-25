@@ -1,0 +1,14 @@
+{
+    "search": {
+        "__typename": "SearchResultItemConnection",
+        "edges": [{
+            "__typename": "SearchResultItemEdge",
+            "node": {
+                "__typename": "User",
+                "avatarUrl": "https://avatars1.githubusercontent.com/u/8677283?v=4",
+                "login": "ireade",
+                "name": "Ire Aderinokun"
+            }
+        }]
+    }
+}

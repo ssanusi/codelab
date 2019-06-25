@@ -1,51 +1,28 @@
-import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import Card from '../Component/Card';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-export class HomeScreen extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
+import CardList from '../Component/CardList';
+import { mainColor, primary } from '../lib/constants';
 
-  render() {
-    return (
-      <View style={style.container}>
-        <View style={style.header}>
-          <Text style={style.color}>Code Lab</Text>
-        </View>
-        <View style={style.main}>
-          <Text style={style.mainText}>Javascript Developers lagos</Text>
-          <Card />
-        </View>
-      </View>
-    );
-  }
-}
+const HomeScreen = ({ navigation }) => (
+  <View style={style.container}>
+    <View style={style.main}>
+      <Text style={style.mainText}>Javascript Developers lagos</Text>
+      <CardList navigation={navigation} />
+    </View>
+  </View>
+);
 
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 35,
-  },
-  header: {
-    backgroundColor: '#006064',
-    height: 80,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: 20,
-  },
-  color: {
-    color: '#ffffff',
-    fontSize: 18,
-    fontWeight: 'bold',
   },
   main: {
-    backgroundColor: '#E1E2E1',
+    backgroundColor: mainColor,
     flex: 1,
   },
   mainText: {
-    color: '#006064',
+    color: primary,
     fontSize: 10,
     fontWeight: 'bold',
     paddingLeft: 10,
