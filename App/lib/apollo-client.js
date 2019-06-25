@@ -5,7 +5,6 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import { TOKEN } from 'react-native-dotenv';
 
 const token = TOKEN;
-
 // create a concatenatable http link for apollo
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
@@ -14,12 +13,7 @@ const httpLink = createHttpLink({
 // append a token on each apollo request
 const authHttpLink = setContext((_, { headers }) => {
   // read token from Cookies
-<<<<<<< HEAD
-=======
 
-  const token = TOKEN;
-
->>>>>>> implement Home Page
   // send token on each request
   return {
     headers: {

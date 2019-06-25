@@ -14,13 +14,13 @@ exports[`Card Component renders without crashing 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "borderRadius": 6.33,
+      "flex": 1,
       "flexDirection": "row",
       "height": 83.65,
       "justifyContent": "space-evenly",
       "marginHorizontal": 18,
       "marginTop": 15,
       "opacity": 1,
-      "width": 331.41,
     }
   }
 >
