@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
 import CardList from '../Component/CardList';
 import { mainColor, primary } from '../lib/constants';
 
