@@ -14,6 +14,12 @@ const httpLink = createHttpLink({
 // append a token on each apollo request
 const authHttpLink = setContext((_, { headers }) => {
   // read token from Cookies
+<<<<<<< HEAD
+=======
+
+  const token = TOKEN;
+
+>>>>>>> implement Home Page
   // send token on each request
   return {
     headers: {
