@@ -2,6 +2,14 @@
 
 exports[`Card Component renders without crashing 1`] = `
 <View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -11,6 +19,7 @@ exports[`Card Component renders without crashing 1`] = `
       "justifyContent": "space-evenly",
       "marginHorizontal": 18,
       "marginTop": 15,
+      "opacity": 1,
       "width": 331.41,
     }
   }
@@ -26,7 +35,11 @@ exports[`Card Component renders without crashing 1`] = `
     }
   >
     <Image
-      source={1}
+      source={
+        Object {
+          "uri": undefined,
+        }
+      }
       style={
         Object {
           "borderRadius": 25,
@@ -36,10 +49,14 @@ exports[`Card Component renders without crashing 1`] = `
       }
     />
     <View>
-      <Text>
-        Sulaiman Sanusi
-      </Text>
-      <View>
+      <Text />
+      <View
+        style={
+          Object {
+            "padding": 3,
+          }
+        }
+      >
         <Text>
           <Image
             source={1}
@@ -51,7 +68,6 @@ exports[`Card Component renders without crashing 1`] = `
             }
           />
            
-          ssanusi
         </Text>
       </View>
     </View>

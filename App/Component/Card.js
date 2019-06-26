@@ -1,22 +1,26 @@
 import React from 'react';
 import {
-  View, Text, StyleSheet, Image,
+  View, Text, StyleSheet, Image, TouchableOpacity,
 } from 'react-native';
+import { secondary } from '../lib/constants';
 
-const Card = props => (
-  <View style={style.container}>
+
+const Card = ({
+  fullName, avatarUrl, username, navigation,
+}) => (
+  <TouchableOpacity
+    style={style.container}
+    onPress={() => navigation.navigate('Profile', { username })}
+  >
     <View style={style.flexLayout}>
-      <Image
-        style={style.thumbnail}
-        source={require('../../assets/2362f33e0b8f49bd92733979a17eb21d.png')}
-      />
+      <Image style={style.thumbnail} source={{ uri: avatarUrl }} />
       <View>
-        <Text>Sulaiman Sanusi</Text>
-        <View>
+        <Text>{fullName}</Text>
+        <View style={style.text}>
           <Text>
             <Image style={style.logo} source={require('../../assets/GitHub-Mark-64px.png')} />
             {' '}
-            ssanusi
+            {username}
           </Text>
         </View>
       </View>
@@ -28,14 +32,14 @@ const Card = props => (
       </View>
       <View />
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 const style = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: secondary,
     borderRadius: 6.33,
     width: 331.41,
     height: 83.65,
@@ -60,6 +64,9 @@ const style = StyleSheet.create({
   logo: {
     height: 12,
     width: 12,
+  },
+  text: {
+    padding: 3,
   },
 });
 
