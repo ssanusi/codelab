@@ -1,17 +1,29 @@
 import React from 'react';
 import { ApolloProvider } from 'react-apollo';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createSwitchNavigator, createStackNavigator, createAppContainer } from 'react-navigation';
 import client from './lib/apollo-client';
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import LoginScreen from './screens/LoginScreen';
+import AuthLoadingScreen from './screens/AuthLoadingScreen';
 
-const AppNavigator = createStackNavigator(
+const AppAuthStack = createStackNavigator({
+  SignIn: LoginScreen,
+});
+
+const AppStack = createStackNavigator({
+  Home: HomeScreen,
+  Profile: ProfileScreen,
+});
+
+const AppSwitchStack = createSwitchNavigator(
   {
-    Home: HomeScreen,
-    Profile: ProfileScreen,
+    AuthLoading: AuthLoadingScreen,
+    App: AppStack,
+    Auth: AppAuthStack,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'AuthLoading',
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: '#003539',
@@ -32,7 +44,7 @@ const AppNavigator = createStackNavigator(
   },
 );
 
-const AppContainer = createAppContainer(AppNavigator);
+const AppContainer = createAppContainer(AppSwitchStack);
 
 const App = () => (
   <ApolloProvider client={client}>

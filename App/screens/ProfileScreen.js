@@ -10,12 +10,9 @@ import {
 } from 'react-native';
 import { Query } from 'react-apollo';
 import { gql } from 'apollo-boost';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faExternalLinkAlt, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { Ionicons } from '@expo/vector-icons';
 
-library.add(fab, faExternalLinkAlt);
+
 
 const ProfileScreen = (props) => {
   const { navigation } = props;
@@ -56,11 +53,13 @@ const ProfileScreen = (props) => {
             <View style={style.main}>
               <View style={style.infoBox}>
                 <View style={style.info}>
-                  <FontAwesomeIcon icon={faUserCircle} size={18} />
+                  <Ionicons name={'md-person'} size={20} />
+                  {/* <FontAwesomeIcon icon={faUserCircle} size={18} /> */}
                   <Text style={style.text}>{user.name}</Text>
                 </View>
                 <View style={style.info}>
-                  <FontAwesomeIcon icon={['fab', 'github']} size={20} />
+                  <Ionicons name={'logo-github'} size={20} />
+                  {/* <FontAwesomeIcon icon={['fab', 'github']} size={20} /> */}
                   <Text style={style.text}>{user.login}</Text>
                 </View>
                 <View style={style.username} />
@@ -82,11 +81,11 @@ const ProfileScreen = (props) => {
 
               <View style={style.share}>
                 <TouchableOpacity onPress={toGitHub} style={style.shareButton}>
-                  <FontAwesomeIcon icon={['fab', 'github']} size={28} color="white" />
+                <Ionicons name={'logo-github'} size={30} color='white'/> 
                   <Text style={style.largeText}>Goto Github</Text>
                 </TouchableOpacity>
                 <View style={style.shareButton}>
-                  <FontAwesomeIcon icon={faExternalLinkAlt} size={25} color="white" />
+                  <Ionicons name={'md-share'} size={30} color='white'/> 
                   <Text style={style.largeText}>Share</Text>
                 </View>
               </View>
