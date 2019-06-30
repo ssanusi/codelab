@@ -37,11 +37,12 @@ const Card = ({
 
 const style = StyleSheet.create({
   container: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     backgroundColor: secondary,
     borderRadius: 6.33,
-    width: 331.41,
+    // width: 331.41,
     height: 83.65,
     marginHorizontal: 18,
     marginTop: 15,

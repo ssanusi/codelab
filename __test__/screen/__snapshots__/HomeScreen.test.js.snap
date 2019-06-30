@@ -29,9 +29,12 @@ exports[`HomeScreen renders without crashing 1`] = `
     >
       Javascript Developers lagos
     </Text>
-    <Text>
-      Loading...
-    </Text>
+    <ActivityIndicator
+      animating={true}
+      color="#0000ff"
+      hidesWhenStopped={true}
+      size="large"
+    />
   </View>
 </View>
 `;

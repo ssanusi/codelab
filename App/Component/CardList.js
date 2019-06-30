@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Text } from 'react-native';
+import { FlatList, ActivityIndicator } from 'react-native';
 import { Query } from 'react-apollo';
 import { gql } from 'apollo-boost';
 import Card from './Card';
@@ -23,7 +23,7 @@ export const GET_USERS = gql`
 const CardList = ({ navigation }) => (
   <Query query={GET_USERS}>
     {({ data, loading }) => {
-      if (loading) return <Text>Loading...</Text>;
+      if (loading) return <ActivityIndicator size="large" color="#0000ff" />;
       const { edges } = data.search;
       return (
         <FlatList
