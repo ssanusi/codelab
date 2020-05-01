@@ -1,0 +1,70 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - eslint > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - babel-eslint > @babel/traverse > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - eslint > inquirer > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - eslint > table > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > @unimodules/react-native-adapter > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > expo-av > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > expo-barcode-scanner > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > expo-camera > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > expo-mail-composer > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > expo-sqlite > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > react-google-maps > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/core > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - babel-eslint > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > metro-babel7-plugin-react-transform > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > metro-react-native-babel-preset > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
+    - expo > babel-preset-expo > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-01T05:22:01.100Z'
